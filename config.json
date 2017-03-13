@@ -6,31 +6,31 @@
 	"database":"temperatures"
 	}],
 "sensors":[{
-	"sensor1":"Outside",
+	"sensor1":"ServerRoom",
 	"sensor2":"Inside"
 	}],
 "triggerlimits":[{
-	"sensor1lowlimit":"-20",
+	"sensor1lowlimit":"10",
 	"sensor2lowlimit":"5",
-	"sensor1highlimit":"35",
+	"sensor1highlimit":"25",
 	"sensor2highlimit":"20"
 	}],
 "humiditytriggers":[{
-	"sensor1_humidity_low_limit":"40",
+	"sensor1_humidity_low_limit":"20",
 	"sensor1_humidity_high_limit":"60",
 	"sensor2_humidity_low_limit":"40",
 	"sensor2_humidity_high_limit":"60"
 	}],
 "sensorgpios":[{
-	"gpiosensor1":"22",
-	"gpiosensor2":"23"
+	"gpiosensor1":"23",
+	"gpiosensor2":"22"
 	}],
 "mailinfo":[{
-	"senderaddress":"email address to sender field@gmail.com",
-	"receiveraddress":"email address where to send warnings@gmail.com",
-	"username":"username",
-	"password":"password",
-	"subjectmessage":"Info from temperature logger",
+	"senderaddress":"m.krasnobaev@gmail.com",
+	"receiveraddress":"m.krasnobaev@gmail.com",
+	"username":"m.krasnobaev@gmail.com",
+	"password":"MikhailK",
+	"subjectmessage":"Warning!! Server Room!!",
 	"subjectwarning":"Warning from temperature logger"
 	}],
 "sqlBackupDump":[{
@@ -43,7 +43,7 @@
 	"connectionCheckHour":"23"
 	}],
 "sensortype":"22",
-"sensoramount":"2",
+"sensoramount":"1",
 "sqlbackuppath":"/home/pi/DHT22-TemperatureLogger/Backups/",
 "adafruitpath":"/home/pi/Adafruit_Python_DHT/examples/AdafruitDHT.py"
 }
