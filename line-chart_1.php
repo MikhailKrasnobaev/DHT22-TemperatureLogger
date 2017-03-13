@@ -16,10 +16,10 @@
                     title: {
                         text: 'Temp and Humidity Logger'
                     },
-                    tooltip: {
-                        formatter: function() {
-                            return '<b>' + this.point.name + '</b>: ' + this.y;
-                        }
+                    xAxis: {
+                      type: 'datetime',
+                      tickInterval: 3600 * 1000,
+
                     },
                     plotOptions: {
                         line: {
@@ -30,7 +30,7 @@
                                 color: '#000000',
                                 connectorColor: '#000000',
                                 formatter: function() {
-                                    return '<b>' + this.point.name + '</b>: ' + this.y;
+                                    return '<b>' + this.point.value + '</b>: ' + this.y;
                                 }
                             },
                             showInLegend: true
