@@ -22,7 +22,7 @@ $rows['datetime'] = 'DateTime';
 $rows['temp'] = 'Temperature';
 
 while ($r = mysql_fetch_array($temperatures)) {
-    $rows['data'][] = array($r['dateandtime'], $r['temperature']);
+    $rows['data'][] = array(strtotime($r['dateandtime']), $r['temperature']);
 }
 
 $rslt = array();

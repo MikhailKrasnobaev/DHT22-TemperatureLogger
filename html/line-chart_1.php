@@ -29,7 +29,7 @@
                                 color: '#000000',
                                 connectorColor: '#000000',
                                 formatter: function() {
-                                    return '<b>' + '</b>: ' + this.y;
+                                    return this.y + 'C';
                                 }
                             },
                             showInLegend: true
