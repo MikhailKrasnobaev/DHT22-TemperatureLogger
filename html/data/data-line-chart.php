@@ -12,7 +12,7 @@ $con = mysql_connect($host,$user,$password);
 // select db
 mysql_select_db($database,$con);
 // sql command that selects all entires from current time and X hours backwards
-$sql="SELECT * FROM temperaturedata WHERE dateandtime >= (NOW() - INTERVAL $hours HOUR) AND sensor = 'ServerRoom'";
+$sql="SELECT * FROM temperaturedata WHERE dateandtime >= (NOW() - INTERVAL $hours HOUR) AND sensor = 'ServerRoom' ORDER BY dateandtime DESC";
 //NOTE: If you want to show all entries from current date in web page uncomment line below by removing //
 //$sql="select * from temperaturedata where date(dateandtime) = curdate();";
 // set query to variable
