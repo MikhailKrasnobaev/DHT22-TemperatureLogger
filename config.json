@@ -26,10 +26,10 @@
 	"gpiosensor2":"22"
 	}],
 "mailinfo":[{
-	"senderaddress":"m.krasnobaev@gmail.com",
-	"receiveraddress":"m.krasnobaev@gmail.com",
-	"username":"m.krasnobaev@gmail.com",
-	"password":"MikhailK",
+	"senderaddress":"xxxxxxxxxxx",
+	"receiveraddress":"xxxxxxxxxxx",
+	"username":"xxxxxxxxxxx",
+	"password":"xxxxxxxxxxxxxxx",
 	"subjectmessage":"Warning!! Server Room!!",
 	"subjectwarning":"Warning from temperature logger"
 	}],
